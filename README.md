@@ -10,4 +10,4 @@
 
 Made by Richard Finlay Tweed during MLH Prime Europe ( https://prime.mlh.io/events/europe-regional/ )
 
-Made to convert files from Ascii to Emoji. Written in Julia and working on Julia 0.5 and OSX Sierra.
+Made to convert files from Ascii to Emoji. Written in Julia ( https://julialang.org/ ) and working on Julia 0.5 and OSX Sierra as what better to use a " high-level, high-performance dynamic programming language for numerical computing" for but emojis.
