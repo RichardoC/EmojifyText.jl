@@ -1,5 +1,7 @@
 module EmojifyText
 include("EmojiDict.jl")
+# include(EmojiDict)
+
 # package code goes here
 
 conversion_dict = conversion_dict
@@ -8,19 +10,19 @@ conversion_dict = conversion_dict
 function convert_line(line::String)
   newline = ""
   for char in line
-    println(char)
+    # println(char)
     if char == '\n'
       continue
     end
     try
       newchar = conversion_dict[string(char)]
-      println(newchar)
+      # println(newchar)
       newline = newline * newchar
-      println(newline)
     catch err
       showerror(STDOUT, err, backtrace());println()
     end
   end
+  # println(newline)
   return newline
 end
 
