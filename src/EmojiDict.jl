@@ -97,3 +97,8 @@ conversion_dict["W"] = "🕸"
 conversion_dict["X"] = "🥅"
 conversion_dict["Y"] = "😱"
 conversion_dict["Z"] = "🐠"
+
+dict_conversion = Dict{String,String}()
+for (key, value) in conversion_dict
+  dict_conversion[value] = key
+  end
