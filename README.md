@@ -5,3 +5,9 @@
 [![Coverage Status](https://coveralls.io/repos/RichardoC/EmojifyText.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/RichardoC/EmojifyText.jl?branch=master)
 
 [![codecov.io](http://codecov.io/github/RichardoC/EmojifyText.jl/coverage.svg?branch=master)](http://codecov.io/github/RichardoC/EmojifyText.jl?branch=master)
+
+^Ignore the above
+
+Made by Richard Finlay Tweed during MLH Prime Europe ( https://prime.mlh.io/events/europe-regional/ )
+
+Made to convert files from Ascii to Emoji. Written in Julia and working on Julia 0.5 and OSX Sierra.
