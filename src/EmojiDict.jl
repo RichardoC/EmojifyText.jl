@@ -56,8 +56,8 @@ conversion_dict["j"] = "🛩"
 conversion_dict["k"] = "🍾"
 conversion_dict["l"] = "🐞"
 conversion_dict["m"] = "🐭"
-conversion_dict["n"] = "🙅‍♂️"
-conversion_dict["o"] = "🙅"
+conversion_dict["n"] = "🙅‍"
+conversion_dict["o"] = "🎱"
 conversion_dict["p"] = "🐧"
 conversion_dict["q"] = "😤"
 conversion_dict["r"] = "👾"
@@ -98,7 +98,12 @@ conversion_dict["X"] = "🥅"
 conversion_dict["Y"] = "😱"
 conversion_dict["Z"] = "🐠"
 
+# Back convert emoji to ASCII
 dict_conversion = Dict{String,String}()
 for (key, value) in conversion_dict
+  # println(key)
+  # println(value)
   dict_conversion[value] = key
+  dict_conversion[value]
   end
+println(dict_conversion)

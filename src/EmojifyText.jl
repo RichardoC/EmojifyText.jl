@@ -3,9 +3,10 @@ include("EmojiDict.jl")
 
 # package code goes here
 
-conversion_dict = conversion_dict
+# conversion_dict = conversion_dict
 
 function convert_line(line::String)
+  # converts a line to emoji
   newline = "";
   for char in line
     newchar = get(conversion_dict, string(char), "🚓");
@@ -15,6 +16,8 @@ function convert_line(line::String)
 end
 
 function unconvert_line(line::String)
+  # unconverts a line form emoji
+  # TODO: make this work (emoji can be more than one char)
   newline = "";
   for char in line
     newchar = get(dict_conversion, string(char), "🚓");
@@ -24,6 +27,7 @@ function unconvert_line(line::String)
 end
 
 function convert_file(input_file_name::String, output_file_name::String)
+  # Converts a file from ascii to emoji
   f_in = open(input_file_name,"r")
   f_out = open(output_file_name, "w")
   #Deleting the file if it exists
@@ -40,6 +44,8 @@ function convert_file(input_file_name::String, output_file_name::String)
 end
 
 function unconvert_file(input_file_name::String, output_file_name::String)
+  # Converts a file from ascii to emoji
+  # TODO: make this work (emoji can be more than one char)
   f_in = open(input_file_name,"r")
   f_out = open(output_file_name, "w")
   #Deleting the file if it exists
@@ -56,6 +62,7 @@ function unconvert_file(input_file_name::String, output_file_name::String)
 end
 
 function print_file(file_name::String)
+  # Prints out a file to console
   f_n = open(file_name,"r")
   println("Printing file "*file_name)
   println("-----------------------------------------")
@@ -64,7 +71,5 @@ function print_file(file_name::String)
   end
   close(f_n)
 end
-
-
 
 end # module
