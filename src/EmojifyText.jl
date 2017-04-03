@@ -40,7 +40,7 @@ function convert_file(input_file_name::String, output_file_name::String)
   end
   close(f_in)
   close(f_out)
-  print_file(output_file_name)
+  # print_file(output_file_name)
 end
 
 function unconvert_file(input_file_name::String, output_file_name::String)
@@ -58,7 +58,7 @@ function unconvert_file(input_file_name::String, output_file_name::String)
   end
   close(f_in)
   close(f_out)
-  print_file(output_file_name)
+  # print_file(output_file_name)
 end
 
 function print_file(file_name::String)
